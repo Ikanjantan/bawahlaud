@@ -88,7 +88,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('/ProjeK\ Gede/marek-okon-tWWCqIMiUmg-unsplash.jpg');
+    background-image: url('./img/marek-okon-tWWCqIMiUmg-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
