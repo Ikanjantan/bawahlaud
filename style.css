@@ -1,0 +1,369 @@
+:root {
+    --primary: #1E88E5; /* Biru Laut */
+    --bg: #0D47A1;      /* Biru Gelap */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #0A2239; /* Biru Laut yang lebih gelap */
+    color: white;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background: linear-gradient(to right, #006994, #33B5E5); /* Gradasi Biru Laut */
+    border-bottom: 1px solid #013243; /* Garis Gelap Laut */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .navbar-logo {
+    font-family: Gugi, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .navbar-logo span{
+      color: #00E676; /* Hijau Laut */
+  }
+  
+  .navbar-nav {
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 16rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar-nav.active {
+    right: 0%;
+  }
+
+  .navbar-nav a {
+    color: #0D47A1; /* Biru Gelap */
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
+
+  .navbar-nav a:hover {
+      color: #00E676; /* Hijau Laut */
+  }
+  
+  .navbar-extra a {
+    color: white;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar-extra a:hover {
+    color: #00E676; /* Hijau Laut */
+  }
+  
+  #hammenu {
+    display: inline-block;
+  }
+  
+  /* Hero Section */
+  .hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('/ProjeK\ Gede/marek-okon-tWWCqIMiUmg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+  }
+  
+  .content h1{
+    font-size: 3.3em;
+    color: white;
+    text-shadow: 5px 5px 7px black;
+    line-height: 1.2;
+  }
+  
+  .content p{
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+    font-weight: 200;
+    text-shadow: 5px 5px 7px black;
+  }
+  
+  .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    color: #00E676;
+    background-color: #013243;
+    border-radius: 0.5rem;
+  }
+  
+  .content h1 span{
+    color: #00E676;
+  }
+  
+  .about{
+    padding: 7rem 7% 1.4rem;
+  }
+  
+  .about h2{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about span{
+    color: #00E676;
+  }
+  
+  .row{
+    display: flex;
+  }
+  
+  .about-img{
+    flex: 1 1 45re,;
+  }
+  
+  .about-img img{
+    width: 33rem;
+  
+  }
+  
+  .content-about{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+  }
+  
+  .content-about h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content-about p{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .about-cta{
+    margin-top: 5rem;
+    display: flex;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    color: #00E676;
+    background-color: #013243;
+    border-radius: 0.5rem;
+    float: right;
+  }
+  
+  .form h2{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .wrapper {
+    width: 100%;
+    height: 500px; /* Tinggi area pembungkus */
+    position: relative; /* Agar anak-anaknya bisa diatur posisi */
+  }
+  
+  /* Styling untuk form container */
+  .form-container {
+    width: 400px; /* Lebar maksimal form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Agar elemen bisa diposisikan relatif ke wrapper */
+    top: 50%; /* Setengah tinggi wrapper */
+    left: 50%; /* Setengah lebar wrapper */
+    transform: translate(-50%, -50%); /* Geser ke tengah */
+    text-align: center;
+  }
+  
+  /* Header form */
+  .form-container h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Input dan textarea */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Fokus input */
+  form input:focus,
+  form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Tombol submit */
+  form button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Jenis Ikan Html */
+
+  .informasi-ikan {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .ikan-card {
+    display: inline-block;
+    margin: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .ikan-card img {
+    width: 10rem;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .ikan-card h2 {
+    margin: 0.5rem 0;
+    color: #0077b6;
+  }
+
+  .ikan-card p{
+    font-size: 1rem;
+    color: black;
+  }
+  /* Jenis Ikan Html */
+
+  /* isi konten jenis ikan */
+  .isikontenjenisikan {
+    padding: 6rem;
+    text-align: center;
+  }
+
+  .isikontenjenisikan img{
+    width: 35rem;
+    padding-bottom: 1rem;
+  }
+
+  .isikontenjenisikan h2 {
+    font-family: Gugi, sans-serif;
+    padding-bottom: 1rem;
+  }
+
+  .isikontenjenisikan p{
+    font-family: Gugi, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .isikontenjenisikan span{
+    color: #00E676;
+  }
+
+  .cta-isiikan{
+    float: right;
+    display:flex;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    color: #00E676;
+    background-color: #013243;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    margin-right: 6rem;
+  }
+  /* isi konten jenis ikan */
+
+  /* maps */
+  .map-container {
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  iframe {
+    border: 0;
+    width: 80%;
+    height: 450px;
+    max-width: 1000px; /* Optional: max width to prevent the map from stretching too much */
+    margin: 0 auto;
+  }
+  /* maps */
+
+  /* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px){
+  html {
+    font-size: 62.5%;
+  }
+
+  #hammenu {
+    display: inline-block;
+  }
+
+  .row{
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px){
+  html {
+    font-size: 55%;
+  }
+}

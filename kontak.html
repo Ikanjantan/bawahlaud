@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
+      rel="stylesheet"  
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start-->
+    <nav class="navbar">
+      <a class="navbar-logo" href="#">Fish<span>Pedia</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="jenisikan.html">Jenis Ikan</a>
+        <a href="#">Kirim Masukan</a>
+        <a href="lokasikami.html">Lokasi kami</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hammenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End-->
+
+     <!-- Form Start -->
+     <section>
+      <div class="wrapper">
+        <div class="form-container">
+          <h1>Kirim masukan anda</h1>
+          <form id="feedback-form">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Masukkan subjek" required />
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" placeholder="Tulis pesan Anda" rows="5" required></textarea>
+
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+     <!-- Form End -->
+
+    <script>
+        feather.replace();
+      </script>
+      <script src="jav.js"></script>
+    </body>
+  </html>
+  
